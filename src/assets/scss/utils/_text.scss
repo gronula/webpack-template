@@ -1,0 +1,122 @@
+/* Headings */
+
+.t-h1 {
+  @include font('b');
+  font-size: 4.5rem;
+  line-height: 1.17;
+  letter-spacing: 0;
+
+  @include respond-min(tablet) {
+    font-size: 3.4375rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+.t-h2 {
+  @include font('b');
+  font-size: 3rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @include respond-min(tablet) {
+    font-size: 2.875rem;
+    line-height: 1.61;
+  }
+}
+
+.t-h3 {
+  @include font('b');
+  font-size: 2.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  @include respond-min(tablet) {
+    font-size: 1.875rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+}
+
+.t-h4 {
+  @include font('m');
+  font-size: 2.125rem;
+  line-height: 1.2;
+  letter-spacing: 0.07125rem;
+
+  @include respond-min(tablet) {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.035625rem;
+  }
+}
+
+
+/* Text */
+
+.t-small {
+  font-size: 1.25rem;
+  line-height: 1.465;
+  letter-spacing: 0.07125rem;
+
+  @include respond-min(tablet) {
+    font-size: 0.875rem;
+    letter-spacing: 0.035625rem;
+  }
+}
+
+.t-normal {
+  font-size: 1.625rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  @include respond-min(tablet) {
+    font-size: 1.125rem;
+  }
+}
+
+.t-big {
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+
+  @include respond-min(tablet) {
+    font-size: 1.375rem;
+  }
+}
+
+
+/* Style */
+
+.t-ttu {
+  text-transform: uppercase;
+}
+
+.t-tdn {
+  text-decoration: none;
+}
+
+.t-l-title {
+  @include font('b');
+  font-size: 1.375rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @include respond-min(tablet) {
+    font-size: 0.8125em;
+  }
+}
+
+.t-l-caption {
+  @include font('b');
+  font-size: 1.375rem;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @include respond-min(tablet) {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+}

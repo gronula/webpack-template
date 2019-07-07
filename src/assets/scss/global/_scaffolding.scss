@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  @include fluid(
+    'font-size',
+    (
+      360px: 8px,
+      768px: 10px,
+      1024px: 12px,
+      1440px: 16px,
+      1920px: 18px,
+    )
+  );
+}
+
+body {
+  min-width: $mobile;
+  font-family: 'Roboto Regular', 'Arial', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}

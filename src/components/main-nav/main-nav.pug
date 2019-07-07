@@ -1,0 +1,131 @@
+mixin main-nav(className)
+  nav.main-nav(class=className)
+      ul.main-nav__list
+        li.one.main-nav__item
+          a.main-nav__link(href=`#`) Физическим лицам
+          .main-nav__content
+            a.main-nav__link(href=`#`) Физическим лицам
+
+            .main-nav__block
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Паевые фонды
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) ИИС
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) СМАРТ
+
+              h4.main-nav__subtitle Для крупных капиталов
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Доверительное управление
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Семейные фонды
+
+            .main-nav__info.bg-l-grey
+              h4.main-nav__subtitle Полезная информация
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Начинающему инвестору
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Подобрать продукт
+
+            .main-nav__banner.u-flex-col.bg-l-green
+              +picture(``, {
+                minWidth: `1024px`,
+                desktopName: `banner-01`,
+                mobileName: `banner-01`,
+                imgClass: `main-nav__banner-image`,
+                alt: `Инвестиционные идеи для начинающих инвесторов`
+              })
+              h3.main-nav__banner-title.t-h4 Инвестиционные идеи для начинающих инвесторов
+              +btn({
+                btnText: `Читать далее`,
+                btnClass: `btn--plain btn--black`
+              })
+
+        li.two.main-nav__item
+          a.main-nav__link(href=`#`) Юридическим лицам
+          .main-nav__content
+            a.main-nav__link(href=`#`) Юридическим лицам
+
+            .main-nav__block
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Паевые фонды
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) ИИС
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) СМАРТ
+
+              h4.main-nav__subtitle Для крупных капиталов
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Доверительное управление
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Семейные фонды
+
+            .main-nav__info.bg-l-grey
+              h4.main-nav__subtitle Полезная информация
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Начинающему инвестору
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Подобрать продукт
+
+            .main-nav__banner.u-flex-col.bg-l-red
+              +picture(``, {
+                minWidth: `1024px`,
+                desktopName: `banner-01`,
+                mobileName: `banner-01`,
+                imgClass: `main-nav__banner-image`,
+                alt: `Инвестиционные идеи для начинающих инвесторов`
+              })
+              h3.main-nav__banner-title.t-h4 Инвестиционные идеи для начинающих инвесторов
+              +btn({
+                btnText: `Читать далее`,
+                btnClass: `btn--plain btn--black`
+              })
+
+        li.three.main-nav__item
+          a.main-nav__link(href=`#`) Паевые фонды
+          .main-nav__content
+            a.main-nav__link(href=`#`) Паевые фонды
+
+            .main-nav__block
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Паевые фонды
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) ИИС
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) СМАРТ
+
+              h4.main-nav__subtitle Для крупных капиталов
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Доверительное управление
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Семейные фонды
+
+            .main-nav__info.bg-l-grey
+              h4.main-nav__subtitle Полезная информация
+              ul.main-nav__sublist
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Начинающему инвестору
+                li.main-nav__subitem
+                  a.main-nav__sublink(href=`#`) Подобрать продукт
+
+            .main-nav__banner.u-flex-col.bg-l-blue
+              +picture(``, {
+                minWidth: `1024px`,
+                desktopName: `banner-01`,
+                mobileName: `banner-01`,
+                imgClass: `main-nav__banner-image`,
+                alt: `Инвестиционные идеи для начинающих инвесторов`
+              })
+              h3.main-nav__banner-title.t-h4 Инвестиционные идеи для начинающих инвесторов
+              +btn({
+                btnText: `Читать далее`,
+                btnClass: `btn--plain btn--black`
+              })

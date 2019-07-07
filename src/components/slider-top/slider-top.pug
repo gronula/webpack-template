@@ -1,0 +1,34 @@
+mixin slider-top(className, {slides, pagesClass, dotsClass, arrowsClass})
+  .slider-top.swiper-container(class=className)
+    .swiper-wrapper
+      if slides.length
+        each slide in slides
+          .slider-top__slide.swiper-slide
+            +picture(`bg-d-grey`, slide.image)
+            h1.slider-top__title.t-h1= slide.title
+            .slider-top__text
+              p= slide.text
+            +btn({
+              btnText: `Читать подробнее`,
+              btnClass: `btn--fill btn--red slider-top__btn`
+            })
+
+    .slider-top__pages(class=pagesClass)
+      span.slider-top__page.slider-top__page--current 01
+      span.slider-top__timeline
+      if slides.length < 10
+        span.slider-top__page.slider-top__page--last 0#{slides.length}
+      else
+        span.slider-top__page.slider-top__page--last= slides.length
+
+    .slider-top__dots(class=dotsClass)
+
+    .slider-top__arrows(class=arrowsClass)
+      +btn({
+        btnText: ``,
+        btnClass: `slider-top__arrow slider-top__arrow--prev`
+      })
+      +btn({
+        btnText: ``,
+        btnClass: `slider-top__arrow slider-top__arrow--next`
+      })

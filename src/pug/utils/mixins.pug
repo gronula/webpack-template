@@ -1,0 +1,24 @@
+mixin picture(className, {minWidth, desktopName, mobileName, imgClass, alt, isSVG = false, svgName})
+  div.media-obj(class=[className, imgClass])
+    if isSVG
+      img(src=`/assets/img/${svgName}.svg`, alt=alt)
+    else
+      picture
+        source(
+          type=`image/webp`
+          media=`(min-width: ${minWidth})`
+          srcset=`/assets/img/${desktopName}@1x.webp 1x, /assets/img/${desktopName}@2x.webp   2x`
+        )
+        source(
+          type=`image/webp`
+          srcset=`/assets/img/${mobileName}@1x.webp 1x, /assets/img/${mobileName}@2x.webp 2x`
+        )
+        source(
+          media=`(min-width: ${minWidth})`
+          srcset=`/assets/img/${desktopName}@1x.png 1x, /assets/img/${desktopName}@2x.png 2x`
+        )
+        img(
+          src=`/assets/img/${mobileName}@1x.png`
+          srcset=`/assets/img/${mobileName}@1x.png 1x, /assets/img/${mobileName}@2x.png 2x`
+          alt=alt
+        )

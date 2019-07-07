@@ -1,0 +1,10 @@
+mixin logo(className)
+  .logo(class=className)
+    a.logo__link.u-flex(href=`#`)
+      +picture(``, {
+        minWidth: `1024px`,
+        desktopName: `logo`,
+        mobileName: `logo`,
+        imgClass: ``,
+        alt: `Доход. Управляющая компания`
+      })

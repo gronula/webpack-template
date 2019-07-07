@@ -1,0 +1,35 @@
+/* Custom variables */
+
+:root {
+}
+
+
+/* Colors */
+
+$black: #000000;
+$white: #ffffff;
+$red: #ad033b;
+$l-red: #e8c9db;
+$green: #23dea8;
+$l-green: #c5efdd;
+$l-blue: #ccdff1;
+$grey: #d1d7db;
+$l-grey: #edf1f2;
+$d-grey: #919aa6;
+$text-color: #75808f;
+
+
+/* Viewports */
+
+$mobile: 320px;
+$tablet-sm: 768px;
+$tablet: 1024px;
+$desktop-sm: 1280px;
+$desktop: 1440px;
+$desktop-lg: 1600px;
+$desktop-xlg: 1920px;
+
+
+/* Transition */
+
+$trs: all 0.4s cubic-bezier(0.33, 0, 0, 1);

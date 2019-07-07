@@ -1,0 +1,7 @@
+mixin advantages({className, items})
+  section.advantages(class=className)
+    .advantages__items
+      each item in items
+        .advantages__item
+          +picture(``, item.image)
+          p.advantages__item-text= item.text

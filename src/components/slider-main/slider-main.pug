@@ -1,0 +1,40 @@
+mixin slider-main(className, {slides, pagesClass, dotsClass, arrowsClass})
+  .slider-main.swiper-container(class=className)
+    .swiper-wrapper
+      if slides.length
+        each slide in slides
+          .slider-main__slide.swiper-slide(class=slide.slideClass)
+            if slide.image
+              +picture(``, slide.image)
+
+            if slide.stats
+              .slider-main__stats
+                .slider-main__stats-value.slider-main__stats-value--risk(class=`slider-main__stats-value--${slide.stats.risk}`)
+                  p.t-l-caption.slider-main__stats-name Риск
+                  span.slider-main__stats-scale
+                    - for (let i = 0; i < slide.stats.max; i++)
+                      span.slider-main__stats-cell
+
+                .slider-main__stats-value.slider-main__stats-value--profit(class=`slider-main__stats-value--${slide.stats.profit}`)
+                  p.t-l-caption.slider-main__stats-name Доходность
+                  span.slider-main__stats-scale
+                    - for (let i = 0; i < slide.stats.max; i++)
+                      span.slider-main__stats-cell
+
+            if slide.caption
+              p.t-l-caption.slider-main__caption= slide.caption
+
+            .slider-main__content
+              if slide.title
+                h4.t-h4.slider-main__title= slide.title
+
+              if slide.text
+                p.slider-main__text= slide.text
+
+              if slide.chart
+                .slider-main__chart
+                  p.slider-main__chart-result= slide.chart.result
+                  p.slider-main__chart-period= slide.chart.period
+
+            if slide.btn
+              +btn(slide.btn)

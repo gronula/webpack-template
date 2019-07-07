@@ -1,0 +1,15 @@
+-
+  const siteNavLinks = [
+    `О компании`,
+    `Вопросы и ответы`,
+    `Новости`,
+    `Контакты`,
+    `Блог`
+  ]
+
+mixin site-nav(className)
+  nav.site-nav(class=className)
+    ul.site-nav__list
+      each link in siteNavLinks
+        li.site-nav__item
+          a.site-nav__link(href=`#`)= link

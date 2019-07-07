@@ -1,0 +1,259 @@
+extends ../templates/template
+
+block variables
+  -
+    const sliders = {
+      banners: {
+        slides: [
+          {
+            title: `Мировые акции`,
+            text: `При формировании инвестиционного портфеля управляющий ориентируется на индекс MSCI World и не отклоняется от него существенно`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-top-desktop-01`,
+              mobileName: `slider-top-mobile-01`,
+              imgClass: `slider-top__image`,
+              alt: `Мировые акции`,
+            },
+          },
+          {
+            title: `Мировые акции 2`,
+            text: `При формировании инвестиционного портфеля управляющий ориентируется на индекс MSCI World и не отклоняется от него существенно`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-top-desktop-01`,
+              mobileName: `slider-top-mobile-01`,
+              imgClass: `slider-top__image`,
+              alt: `Мировые акции 2`,
+            },
+          },
+          {
+            title: `Мировые акции 3`,
+            text: `При формировании инвестиционного портфеля управляющий ориентируется на индекс MSCI World и не отклоняется от него существенно`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-top-desktop-01`,
+              mobileName: `slider-top-mobile-01`,
+              imgClass: `slider-top__image`,
+              alt: `Мировые акции 3`,
+            },
+          },
+          {
+            title: `Мировые акции 4`,
+            text: `При формировании инвестиционного портфеля управляющий ориентируется на индекс MSCI World и не отклоняется от него существенно`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-top-desktop-01`,
+              mobileName: `slider-top-mobile-01`,
+              imgClass: `slider-top__image`,
+              alt: `Мировые акции 4`,
+            },
+          },
+        ],
+        pagesClass: `slider-top__pages--desktop`,
+        dotsClass: `slider-top__dots--all`,
+        arrowsClass: `slider-top__arrows--desktop`,
+      },
+      products: {
+        slides: [{
+            slideClass: `bg-white`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-main-01`,
+              mobileName: `slider-main-01`,
+              imgClass: `slider-main__image`,
+              alt: `Дивидендные акции. Россия`,
+            },
+            stats: {
+              // количество заполненных ячеек в блоке статистики. мин 0, макс 5
+              risk: `2`,
+              profit: `3`,
+              max: 5,
+            },
+            caption: ``,
+            title: `Дивидендные акции. Россия`,
+            text: `Портфель фонда формируется из акций российских компаний, которые регулярно платят дивиденды`,
+            chart: {
+              result: `+25,97 %`,
+              period: `доход за 2018 год.`,
+            },
+            btn: {
+              btnText: `Подробнее`,
+              btnClass: `btn--plain btn--red slider-main__btn`,
+            },
+        }, {
+            slideClass: `bg-white`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-main-02`,
+              mobileName: `slider-main-02`,
+              imgClass: `slider-main__image`,
+              alt: `Дивидендные акции. Россия`,
+            },
+            stats: {
+              // количество заполненных ячеек в блоке статистики. мин 0, макс 5
+              risk: `5`,
+              profit: `5`,
+              max: 5,
+            },
+            caption: ``,
+            title: `Дивидендные акции. Россия`,
+            text: `Портфель фонда формируется из акций российских компаний, которые регулярно платят дивиденды`,
+            chart: {
+              result: `+75,97 %`,
+              period: `доход за 2018 год.`,
+            },
+            btn: {
+              btnText: `Подробнее`,
+              btnClass: `btn--plain btn--red slider-main__btn`,
+            },
+        }, {
+            slideClass: `bg-white`,
+            image: {
+              minWidth: `1024px`,
+              desktopName: `slider-main-03`,
+              mobileName: `slider-main-03`,
+              imgClass: `slider-main__image`,
+              alt: `Дивидендные акции. Россия`,
+            },
+            stats: {
+              // количество заполненных ячеек в блоке статистики. мин 0, макс 5
+              risk: `0`,
+              profit: `1`,
+              max: 5,
+            },
+            caption: ``,
+            title: `Дивидендные акции. Россия`,
+            text: `Портфель фонда формируется из акций российских компаний, которые регулярно платят дивиденды`,
+            chart: {
+              result: `+5,97 %`,
+              period: `доход за 2018 год.`,
+            },
+            btn: {
+              btnText: `Подробнее`,
+              btnClass: `btn--plain btn--red slider-main__btn`,
+            },
+        }],
+      },
+      investments: {
+        slides: [{
+          className: `bg-l-green`,
+          image: {
+            svgName: `investments-01`,
+            imgClass: `investments__image`,
+            alt: `Зачем нужно инвестировать и когда начинать?`,
+            isSVG: true,
+          },
+          title: `Зачем нужно инвестировать и когда начинать?`,
+          text: `Не стоит рассчитывать, что тут за пару лет можно получить миллиарды и потом всю жизнь бездельничать. Ставьте реальную цель — скажем, заработать себе на старость или детям на хорошее образование.`,
+          btn: {
+            btnText: `Подробнее`,
+            btnClass: `btn--plain btn--black investments__btn`,
+          },
+        }, {
+          className: `bg-l-blue`,
+          image: {
+            svgName: `investments-02`,
+            imgClass: `investments__image`,
+            alt: `Почему не стоит вкладывать в депозиты, квартиру, валюту?`,
+            isSVG: true,
+          },
+          title: `Почему не стоит вкладывать в депозиты, квартиру, валюту?`,
+          text: `Не стоит рассчитывать, что тут за пару лет можно получить миллиарды и потом всю жизнь бездельничать. Ставьте реальную цель — скажем, заработать себе на старость или детям на хорошее образование.`,
+          btn: {
+            btnText: `Подробнее`,
+            btnClass: `btn--plain btn--black investments__btn`,
+          },
+        }, {
+          className: `bg-l-red`,
+          image: {
+            svgName: `investments-03`,
+            imgClass: `investments__image`,
+            alt: `Во что лучше инвестировать?`,
+            isSVG: true,
+          },
+          title: `Во что лучше инвестировать?`,
+          text: `Не стоит рассчитывать, что тут за пару лет можно получить миллиарды и потом всю жизнь бездельничать. Ставьте реальную цель — скажем, заработать себе на старость или детям на хорошее образование.`,
+          btn: {
+            btnText: `Подробнее`,
+            btnClass: `btn--plain btn--black investments__btn`,
+          },
+        }],
+      },
+    };
+
+    const advantages = {
+      className: `bg-l-blue`,
+      items: [{
+        image: {
+          svgName: `advantages-01`,
+          imgClass: `advantages__item-image`,
+          alt: `25 лет на рынке`,
+          isSVG: true,
+        },
+        text: `25 лет на рынке`,
+      }, {
+        image: {
+          svgName: `advantages-02`,
+          imgClass: `advantages__item-image`,
+          alt: `Входим в ТОП-5 крупнейших управляющих компаний Северо-Запада`,
+          isSVG: true,
+        },
+        text: `Входим в ТОП-5 крупнейших управляющих компаний Северо-Запада`,
+      }, {
+        image: {
+          svgName: `advantages-03`,
+          imgClass: `advantages__item-image`,
+          alt: `Управляем капиталом более чем в 18 млрд. руб.`,
+          isSVG: true,
+        },
+        text: `Управляем капиталом более чем в 18 млрд. руб.`,
+      }, {
+        image: {
+          svgName: `advantages-04`,
+          imgClass: `advantages__item-image`,
+          alt: `Членство в профессиональных СРО: НФА, НАУФОР, НЛУ`,
+          isSVG: true,
+        },
+        text: `Членство в профессиональных СРО: НФА, НАУФОР, НЛУ`,
+      }],
+    };
+
+block content
+  +header
+  main
+    section.banners.bg-l-grey
+      +slider-top(``, sliders.banners)
+
+    section.products.bg-l-grey
+      header.products__header
+        p.t-l-title.products__caption Посмотрите наши
+        h2.t-h2.products__title Актуальные продукты
+
+      +slider-main(`products__slider`, sliders.products)
+
+      footer.products__footer
+        +btn({
+          btnText: `Все ПИФы`,
+          btnClass: `btn--fill btn--black products__btn`,
+        })
+        a.t-l-title.t-tdn.products__link(href=`#`) Подробнее о ПИФах
+        a.t-l-title.t-tdn.products__link(href=`#`) Как купить пай?
+
+    section.investments
+      header.investments__header
+        h2.t-h2.investments__title Зачем инвестировать?
+        .investments__text
+          p В паевые фонды облигаций можно вкладывать деньги не разбираясь в инвестициях. Такие фонды отлично подходят для начинающих инвесторов.
+          p Материалы из данного раздела помогут вам лучше разобраться в продуктах управляющей компании и сделать правильный выбор.
+      .investments__slider.slider-main.swiper-container
+        .swiper-wrapper
+          if sliders.investments.slides.length
+            each slide in sliders.investments.slides
+              .investments__slide.slider-main__slide.swiper-slide(class=slide.className)
+                +picture(``, slide.image)
+                h4.investments__slide-title= slide.title
+                p.investments__slide-text= slide.text
+                +btn(slide.btn)
+
+    +advantages(advantages)

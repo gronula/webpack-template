@@ -1,0 +1,13 @@
+mixin btn({btnText, btnClass, btnType = `button`, isBtn = false, linkHref=`#`})
+  if isBtn
+    button.btn(class=btnClass type=btnType)
+      span.btn__circle
+        span.btn__arrow
+        span.btn__triangle
+      span.t-l-title.btn__text= btnText
+  else
+    a.t-tdn.btn(class=btnClass href=linkHref)
+      span.btn__circle
+        span.btn__arrow
+        span.btn__triangle
+      span.t-l-title.btn__text= btnText

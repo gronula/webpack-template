@@ -1,0 +1,14 @@
+mixin header(data)
+  header.header
+    +logo(`header__logo`)
+
+    button.header__menu-toggle-btn(type=`button`) Кнопка открытия/закрытия меню
+
+    +main-nav
+
+    +site-nav
+
+    +user-nav
+
+    .header__tel
+      a.t-tdn(href=`tel:88003338585`) 8 800 333 8585
